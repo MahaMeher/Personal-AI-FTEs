@@ -1,0 +1,14 @@
+2026-03-13 00:15:22,814 - FilesystemWatcher - INFO - Initialized FilesystemWatcher
+2026-03-13 00:15:22,815 - FilesystemWatcher - INFO - Watching folder: D:\Personal-AI-FTEs\AI_Employee_Vault\Inbox
+2026-03-13 00:15:22,815 - FilesystemWatcher - INFO - Starting FilesystemWatcher (interval: 30s)
+2026-03-13 00:17:22,823 - FilesystemWatcher - INFO - Found 1 new item(s) to process
+2026-03-13 00:17:22,830 - FilesystemWatcher - INFO - Processed file: its_money.txt -> FILE_its_money.txt.md
+2026-03-13 00:17:22,831 - FilesystemWatcher - INFO - Created action file: FILE_its_money.txt.md
+2026-03-13 00:41:52,879 - FilesystemWatcher - INFO - Found 1 new item(s) to process
+2026-03-13 00:41:52,886 - FilesystemWatcher - INFO - Processed file: good-money.txt -> FILE_good-money.txt.md
+2026-03-13 00:41:52,888 - FilesystemWatcher - INFO - Created action file: FILE_good-money.txt.md
+2026-03-13 01:04:52,930 - FilesystemWatcher - INFO - Found 1 new item(s) to process
+2026-03-13 02:08:32,021 - FilesystemWatcher - ERROR - Failed to create action file for test-approval-flow.txt: [WinError 2] The system cannot find the file specified
+2026-03-13 02:09:02,025 - FilesystemWatcher - INFO - Found 1 new item(s) to process
+2026-03-13 02:09:02,029 - FilesystemWatcher - INFO - Processed file: monthly_pay.txt -> FILE_monthly_pay.txt.md
+2026-03-13 02:09:02,029 - FilesystemWatcher - INFO - Created action file: FILE_monthly_pay.txt.md

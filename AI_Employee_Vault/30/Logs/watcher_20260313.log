@@ -1,0 +1,6 @@
+2026-03-13 01:05:33,821 - FilesystemWatcher - INFO - Initialized FilesystemWatcher
+2026-03-13 01:05:33,822 - FilesystemWatcher - INFO - Watching folder: 30\Inbox
+2026-03-13 01:05:33,822 - FilesystemWatcher - INFO - Starting FilesystemWatcher (interval: 30s)
+2026-03-13 02:08:49,146 - FilesystemWatcher - INFO - Initialized FilesystemWatcher
+2026-03-13 02:08:49,146 - FilesystemWatcher - INFO - Watching folder: 30\Inbox
+2026-03-13 02:08:49,146 - FilesystemWatcher - INFO - Starting FilesystemWatcher (interval: 30s)

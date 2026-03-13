@@ -1,0 +1,3 @@
+2026-03-09 00:57:34,102 - FilesystemWatcher - INFO - Initialized FilesystemWatcher
+2026-03-09 00:57:34,103 - FilesystemWatcher - INFO - Watching folder: D:\Personal-AI-FTEs\AI_Employee_Vault\Inbox
+2026-03-09 00:57:34,110 - FilesystemWatcher - INFO - Processed file: test_document.txt -> FILE_test_document.txt.md

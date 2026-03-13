@@ -1,0 +1,371 @@
+2026-03-10 22:08:16,707 - Orchestrator - INFO - Orchestrator initialized for vault: D:\Personal-AI-FTEs\AI_Employee_Vault
+2026-03-10 22:08:16,708 - Orchestrator - INFO - Starting Orchestrator (interval: 60s)
+2026-03-10 22:08:16,710 - Orchestrator - INFO - Found 1 pending item(s) to process
+2026-03-10 22:08:16,745 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:08:16,746 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:08:16,747 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:09:16,780 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:09:16,788 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:09:16,790 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:09:16,791 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:10:16,796 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:10:16,806 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:10:16,808 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:10:16,809 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:11:16,814 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:11:16,823 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:11:16,824 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:11:16,825 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:12:16,829 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:12:16,837 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:12:16,838 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:12:16,839 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:13:16,844 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:13:16,854 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:13:16,856 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:13:16,857 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:14:16,864 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:14:16,873 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:14:16,875 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:14:16,876 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:15:16,881 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:15:16,892 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:15:16,895 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:15:16,897 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:16:16,905 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:16:16,915 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:16:16,917 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:16:16,918 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:17:16,930 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:17:16,948 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:17:16,951 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:17:16,953 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:18:16,966 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:18:16,983 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:18:16,986 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:18:16,988 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:19:16,999 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:19:17,010 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:19:17,013 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:19:17,016 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:20:17,027 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:20:17,038 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:20:17,039 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:20:17,040 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:21:17,048 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:21:17,062 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:21:17,064 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:21:17,066 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:22:17,082 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:22:17,091 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:22:17,097 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:22:17,098 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:23:17,108 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:23:17,115 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:23:17,116 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:23:17,117 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:24:17,124 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:24:17,134 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:24:17,136 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:24:17,138 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:25:17,146 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:25:17,156 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:25:17,158 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:25:17,159 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:26:17,169 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:26:17,182 - Orchestrator - WARNING - Claude Code not installed, creating processing instructions
+2026-03-10 22:26:17,185 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:26:17,186 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:27:03,936 - Orchestrator - INFO - Orchestrator stopped by user
+2026-03-10 22:27:26,016 - Orchestrator - INFO - Orchestrator initialized for vault: D:\Personal-AI-FTEs\AI_Employee_Vault
+2026-03-10 22:27:26,017 - Orchestrator - INFO - Starting Orchestrator (interval: 60s)
+2026-03-10 22:27:26,020 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:27:26,036 - Orchestrator - WARNING - Qwen Code not installed, creating processing instructions
+2026-03-10 22:27:26,038 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:27:26,038 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:28:26,050 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:28:26,068 - Orchestrator - WARNING - Qwen Code not installed, creating processing instructions
+2026-03-10 22:28:26,071 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:28:26,073 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:29:26,086 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:29:28,924 - Orchestrator - WARNING - Qwen Code not installed, creating processing instructions
+2026-03-10 22:29:28,927 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:29:28,929 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:30:28,934 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:30:28,942 - Orchestrator - WARNING - Qwen Code not installed, creating processing instructions
+2026-03-10 22:30:28,943 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:30:28,944 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:31:28,948 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:31:28,956 - Orchestrator - WARNING - Qwen Code not installed, creating processing instructions
+2026-03-10 22:31:28,958 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:31:28,959 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:32:28,963 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:32:28,973 - Orchestrator - WARNING - Qwen Code not installed, creating processing instructions
+2026-03-10 22:32:28,974 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:32:28,976 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:33:28,981 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:33:28,990 - Orchestrator - WARNING - Qwen Code not installed, creating processing instructions
+2026-03-10 22:33:28,992 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:33:28,994 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:34:29,003 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:34:29,009 - Orchestrator - WARNING - Qwen Code not installed, creating processing instructions
+2026-03-10 22:34:29,011 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:34:29,013 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:35:29,019 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:35:29,028 - Orchestrator - WARNING - Qwen Code not installed, creating processing instructions
+2026-03-10 22:35:29,029 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:35:29,030 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:36:29,034 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:36:29,042 - Orchestrator - WARNING - Qwen Code not installed, creating processing instructions
+2026-03-10 22:36:29,044 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:36:29,045 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:37:29,052 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:37:29,061 - Orchestrator - WARNING - Qwen Code not installed, creating processing instructions
+2026-03-10 22:37:29,063 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:37:29,065 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:38:30,860 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:38:30,872 - Orchestrator - WARNING - Qwen Code not installed, creating processing instructions
+2026-03-10 22:38:30,874 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:38:30,879 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:39:30,888 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:39:30,897 - Orchestrator - WARNING - Qwen Code not installed, creating processing instructions
+2026-03-10 22:39:30,898 - Orchestrator - INFO - Created processing instructions: D:\Personal-AI-FTEs\AI_Employee_Vault\PROCESS_ME.md
+2026-03-10 22:39:30,899 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:39:51,068 - Orchestrator - INFO - Orchestrator stopped by user
+2026-03-10 22:40:20,646 - Orchestrator - INFO - Orchestrator initialized for vault: D:\Personal-AI-FTEs\AI_Employee_Vault
+2026-03-10 22:40:20,647 - Orchestrator - INFO - Starting Orchestrator (interval: 60s)
+2026-03-10 22:40:20,650 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:40:25,344 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 22:40:25,346 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 22:40:25,348 - Orchestrator - INFO - 
+2026-03-10 22:40:25,351 - Orchestrator - INFO - ============================================================
+2026-03-10 22:40:25,352 - Orchestrator - INFO - To process pending items, run:
+2026-03-10 22:40:25,353 - Orchestrator - INFO -   cd "D:\Personal-AI-FTEs\AI_Employee_Vault"
+2026-03-10 22:40:25,354 - Orchestrator - INFO -   qwen "Process pending items. See .qwen_prompt.txt"
+2026-03-10 22:40:25,355 - Orchestrator - INFO - ============================================================
+2026-03-10 22:40:25,356 - Orchestrator - INFO - 
+2026-03-10 22:40:25,357 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:41:25,362 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:41:29,789 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 22:41:29,791 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 22:41:29,793 - Orchestrator - INFO - 
+2026-03-10 22:41:29,794 - Orchestrator - INFO - ============================================================
+2026-03-10 22:41:29,797 - Orchestrator - INFO - To process pending items, run:
+2026-03-10 22:41:29,798 - Orchestrator - INFO -   cd "D:\Personal-AI-FTEs\AI_Employee_Vault"
+2026-03-10 22:41:29,799 - Orchestrator - INFO -   qwen "Process pending items. See .qwen_prompt.txt"
+2026-03-10 22:41:29,799 - Orchestrator - INFO - ============================================================
+2026-03-10 22:41:29,800 - Orchestrator - INFO - 
+2026-03-10 22:41:29,801 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:42:29,807 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:42:34,601 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 22:42:34,602 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 22:42:34,604 - Orchestrator - INFO - 
+2026-03-10 22:42:34,605 - Orchestrator - INFO - ============================================================
+2026-03-10 22:42:34,609 - Orchestrator - INFO - To process pending items, run:
+2026-03-10 22:42:34,610 - Orchestrator - INFO -   cd "D:\Personal-AI-FTEs\AI_Employee_Vault"
+2026-03-10 22:42:34,610 - Orchestrator - INFO -   qwen "Process pending items. See .qwen_prompt.txt"
+2026-03-10 22:42:34,612 - Orchestrator - INFO - ============================================================
+2026-03-10 22:42:34,613 - Orchestrator - INFO - 
+2026-03-10 22:42:34,614 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:43:34,619 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:43:38,978 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 22:43:38,979 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 22:43:38,981 - Orchestrator - INFO - 
+2026-03-10 22:43:38,982 - Orchestrator - INFO - ============================================================
+2026-03-10 22:43:38,985 - Orchestrator - INFO - To process pending items, run:
+2026-03-10 22:43:38,986 - Orchestrator - INFO -   cd "D:\Personal-AI-FTEs\AI_Employee_Vault"
+2026-03-10 22:43:38,987 - Orchestrator - INFO -   qwen "Process pending items. See .qwen_prompt.txt"
+2026-03-10 22:43:38,988 - Orchestrator - INFO - ============================================================
+2026-03-10 22:43:38,989 - Orchestrator - INFO - 
+2026-03-10 22:43:38,990 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:44:38,994 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:44:45,772 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 22:44:45,775 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 22:44:45,777 - Orchestrator - INFO - 
+2026-03-10 22:44:45,782 - Orchestrator - INFO - ============================================================
+2026-03-10 22:44:45,783 - Orchestrator - INFO - To process pending items, run:
+2026-03-10 22:44:45,784 - Orchestrator - INFO -   cd "D:\Personal-AI-FTEs\AI_Employee_Vault"
+2026-03-10 22:44:45,785 - Orchestrator - INFO -   qwen "Process pending items. See .qwen_prompt.txt"
+2026-03-10 22:44:45,785 - Orchestrator - INFO - ============================================================
+2026-03-10 22:44:45,786 - Orchestrator - INFO - 
+2026-03-10 22:44:45,787 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:45:45,803 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:45:52,162 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 22:45:52,163 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 22:45:52,165 - Orchestrator - INFO - 
+2026-03-10 22:45:52,166 - Orchestrator - INFO - ============================================================
+2026-03-10 22:45:52,170 - Orchestrator - INFO - To process pending items, run:
+2026-03-10 22:45:52,171 - Orchestrator - INFO -   cd "D:\Personal-AI-FTEs\AI_Employee_Vault"
+2026-03-10 22:45:52,173 - Orchestrator - INFO -   qwen "Process pending items. See .qwen_prompt.txt"
+2026-03-10 22:45:52,177 - Orchestrator - INFO - ============================================================
+2026-03-10 22:45:52,178 - Orchestrator - INFO - 
+2026-03-10 22:45:52,179 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:46:52,183 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:46:58,092 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 22:46:58,094 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 22:46:58,095 - Orchestrator - INFO - 
+2026-03-10 22:46:58,096 - Orchestrator - INFO - ============================================================
+2026-03-10 22:46:58,099 - Orchestrator - INFO - To process pending items, run:
+2026-03-10 22:46:58,101 - Orchestrator - INFO -   cd "D:\Personal-AI-FTEs\AI_Employee_Vault"
+2026-03-10 22:46:58,104 - Orchestrator - INFO -   qwen "Process pending items. See .qwen_prompt.txt"
+2026-03-10 22:46:58,105 - Orchestrator - INFO - ============================================================
+2026-03-10 22:46:58,106 - Orchestrator - INFO - 
+2026-03-10 22:46:58,108 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:47:58,113 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:48:02,521 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 22:48:02,523 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 22:48:02,524 - Orchestrator - INFO - 
+2026-03-10 22:48:02,528 - Orchestrator - INFO - ============================================================
+2026-03-10 22:48:02,529 - Orchestrator - INFO - To process pending items, run:
+2026-03-10 22:48:02,530 - Orchestrator - INFO -   cd "D:\Personal-AI-FTEs\AI_Employee_Vault"
+2026-03-10 22:48:02,531 - Orchestrator - INFO -   qwen "Process pending items. See .qwen_prompt.txt"
+2026-03-10 22:48:02,532 - Orchestrator - INFO - ============================================================
+2026-03-10 22:48:02,532 - Orchestrator - INFO - 
+2026-03-10 22:48:02,534 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:49:02,538 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:49:07,384 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 22:49:07,385 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 22:49:07,387 - Orchestrator - INFO - 
+2026-03-10 22:49:07,388 - Orchestrator - INFO - ============================================================
+2026-03-10 22:49:07,391 - Orchestrator - INFO - To process pending items, run:
+2026-03-10 22:49:07,392 - Orchestrator - INFO -   cd "D:\Personal-AI-FTEs\AI_Employee_Vault"
+2026-03-10 22:49:07,393 - Orchestrator - INFO -   qwen "Process pending items. See .qwen_prompt.txt"
+2026-03-10 22:49:07,394 - Orchestrator - INFO - ============================================================
+2026-03-10 22:49:07,395 - Orchestrator - INFO - 
+2026-03-10 22:49:07,396 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:50:07,401 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:50:11,852 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 22:50:11,853 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 22:50:11,855 - Orchestrator - INFO - 
+2026-03-10 22:50:11,856 - Orchestrator - INFO - ============================================================
+2026-03-10 22:50:11,860 - Orchestrator - INFO - To process pending items, run:
+2026-03-10 22:50:11,861 - Orchestrator - INFO -   cd "D:\Personal-AI-FTEs\AI_Employee_Vault"
+2026-03-10 22:50:11,862 - Orchestrator - INFO -   qwen "Process pending items. See .qwen_prompt.txt"
+2026-03-10 22:50:11,863 - Orchestrator - INFO - ============================================================
+2026-03-10 22:50:11,864 - Orchestrator - INFO - 
+2026-03-10 22:50:11,865 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:51:11,871 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:51:16,515 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 22:51:16,517 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 22:51:16,518 - Orchestrator - INFO - 
+2026-03-10 22:51:16,519 - Orchestrator - INFO - ============================================================
+2026-03-10 22:51:16,523 - Orchestrator - INFO - To process pending items, run:
+2026-03-10 22:51:16,523 - Orchestrator - INFO -   cd "D:\Personal-AI-FTEs\AI_Employee_Vault"
+2026-03-10 22:51:16,524 - Orchestrator - INFO -   qwen "Process pending items. See .qwen_prompt.txt"
+2026-03-10 22:51:16,525 - Orchestrator - INFO - ============================================================
+2026-03-10 22:51:16,526 - Orchestrator - INFO - 
+2026-03-10 22:51:16,527 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:52:16,532 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:52:23,008 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 22:52:23,009 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 22:52:23,011 - Orchestrator - INFO - 
+2026-03-10 22:52:23,012 - Orchestrator - INFO - ============================================================
+2026-03-10 22:52:23,015 - Orchestrator - INFO - To process pending items, run:
+2026-03-10 22:52:23,016 - Orchestrator - INFO -   cd "D:\Personal-AI-FTEs\AI_Employee_Vault"
+2026-03-10 22:52:23,017 - Orchestrator - INFO -   qwen "Process pending items. See .qwen_prompt.txt"
+2026-03-10 22:52:23,018 - Orchestrator - INFO - ============================================================
+2026-03-10 22:52:23,019 - Orchestrator - INFO - 
+2026-03-10 22:52:23,020 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:53:23,025 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:53:27,825 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 22:53:27,827 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 22:53:27,832 - Orchestrator - INFO - 
+2026-03-10 22:53:27,834 - Orchestrator - INFO - ============================================================
+2026-03-10 22:53:27,837 - Orchestrator - INFO - To process pending items, run:
+2026-03-10 22:53:27,838 - Orchestrator - INFO -   cd "D:\Personal-AI-FTEs\AI_Employee_Vault"
+2026-03-10 22:53:27,840 - Orchestrator - INFO -   qwen "Process pending items. See .qwen_prompt.txt"
+2026-03-10 22:53:27,844 - Orchestrator - INFO - ============================================================
+2026-03-10 22:53:27,845 - Orchestrator - INFO - 
+2026-03-10 22:53:27,846 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:53:41,572 - Orchestrator - INFO - Orchestrator stopped by user
+2026-03-10 22:53:47,195 - Orchestrator - INFO - Orchestrator initialized for vault: D:\Personal-AI-FTEs\AI_Employee_Vault
+2026-03-10 22:53:47,196 - Orchestrator - INFO - Starting Orchestrator (interval: 60s)
+2026-03-10 22:53:47,199 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:53:51,826 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 22:53:51,827 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 22:53:51,829 - Orchestrator - INFO - Starting Qwen Code to process pending items...
+2026-03-10 22:54:49,348 - Orchestrator - INFO - Qwen Code processing completed successfully
+2026-03-10 22:54:49,349 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:55:49,354 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:55:53,930 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 22:55:53,931 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 22:55:53,934 - Orchestrator - INFO - Starting Qwen Code to process pending items...
+2026-03-10 22:56:49,881 - Orchestrator - INFO - Qwen Code processing completed successfully
+2026-03-10 22:56:49,881 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:57:49,889 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:57:54,237 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 22:57:54,238 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 22:57:54,240 - Orchestrator - INFO - Starting Qwen Code to process pending items...
+2026-03-10 22:58:44,064 - Orchestrator - INFO - Qwen Code processing completed successfully
+2026-03-10 22:58:44,064 - Orchestrator - INFO - Processing triggered
+2026-03-10 22:59:44,069 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 22:59:48,515 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 22:59:48,517 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 22:59:48,517 - Orchestrator - INFO - Starting Qwen Code to process pending items...
+2026-03-10 23:00:48,349 - Orchestrator - INFO - Qwen Code processing completed successfully
+2026-03-10 23:00:48,349 - Orchestrator - INFO - Processing triggered
+2026-03-10 23:01:48,355 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 23:01:53,068 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 23:01:54,001 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 23:01:54,008 - Orchestrator - INFO - Starting Qwen Code to process pending items...
+2026-03-10 23:02:53,264 - Orchestrator - INFO - Qwen Code processing completed successfully
+2026-03-10 23:02:53,265 - Orchestrator - INFO - Processing triggered
+2026-03-10 23:03:53,271 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 23:03:58,774 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 23:03:58,776 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 23:03:58,778 - Orchestrator - INFO - Starting Qwen Code to process pending items...
+2026-03-10 23:05:09,065 - Orchestrator - INFO - Qwen Code processing completed successfully
+2026-03-10 23:05:09,066 - Orchestrator - INFO - Processing triggered
+2026-03-10 23:05:21,242 - Orchestrator - INFO - Orchestrator stopped by user
+2026-03-10 23:05:25,344 - Orchestrator - INFO - Orchestrator initialized for vault: D:\Personal-AI-FTEs\AI_Employee_Vault
+2026-03-10 23:05:25,345 - Orchestrator - INFO - Starting Orchestrator (interval: 60s)
+2026-03-10 23:05:25,349 - Orchestrator - INFO - Found 2 pending item(s) to process
+2026-03-10 23:05:30,658 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 23:05:30,659 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 23:05:30,663 - Orchestrator - INFO - Starting Qwen Code to process pending items...
+2026-03-10 23:05:30,664 - Orchestrator - INFO - Note: Running with -y flag for automatic tool execution
+2026-03-10 23:07:11,003 - Orchestrator - INFO - Qwen Code processing completed successfully
+2026-03-10 23:07:11,004 - Orchestrator - INFO - Processing triggered
+2026-03-10 23:22:11,057 - Orchestrator - INFO - Found 1 pending item(s) to process
+2026-03-10 23:22:16,670 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 23:22:16,672 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 23:22:16,673 - Orchestrator - INFO - Starting Qwen Code to process pending items...
+2026-03-10 23:22:16,674 - Orchestrator - INFO - Note: Running with -y flag for automatic tool execution
+2026-03-10 23:24:02,852 - Orchestrator - INFO - Qwen Code processing completed successfully
+2026-03-10 23:24:02,853 - Orchestrator - INFO - Processing triggered
+2026-03-10 23:25:02,905 - Orchestrator - INFO - Found 3 pending item(s) to process
+2026-03-10 23:25:07,756 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 23:25:07,758 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 23:25:07,760 - Orchestrator - INFO - Starting Qwen Code to process pending items...
+2026-03-10 23:25:07,761 - Orchestrator - INFO - Note: Running with -y flag for automatic tool execution
+2026-03-10 23:26:41,729 - Orchestrator - INFO - Qwen Code processing completed successfully
+2026-03-10 23:26:41,730 - Orchestrator - INFO - Processing triggered
+2026-03-10 23:27:41,740 - Orchestrator - INFO - Found 3 pending item(s) to process
+2026-03-10 23:27:46,933 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 23:27:46,934 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 23:27:46,935 - Orchestrator - INFO - Starting Qwen Code to process pending items...
+2026-03-10 23:27:46,935 - Orchestrator - INFO - Note: Running with -y flag for automatic tool execution
+2026-03-10 23:28:28,480 - Orchestrator - INFO - Qwen Code processing completed successfully
+2026-03-10 23:28:28,481 - Orchestrator - INFO - Processing triggered
+2026-03-10 23:29:28,493 - Orchestrator - INFO - Found 3 pending item(s) to process
+2026-03-10 23:29:33,287 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 23:29:33,288 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 23:29:33,289 - Orchestrator - INFO - Starting Qwen Code to process pending items...
+2026-03-10 23:29:33,289 - Orchestrator - INFO - Note: Running with -y flag for automatic tool execution
+2026-03-10 23:30:22,460 - Orchestrator - INFO - Qwen Code processing completed successfully
+2026-03-10 23:30:22,461 - Orchestrator - INFO - Processing triggered
+2026-03-10 23:31:22,467 - Orchestrator - INFO - Found 3 pending item(s) to process
+2026-03-10 23:31:27,594 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 23:31:27,595 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 23:31:27,598 - Orchestrator - INFO - Starting Qwen Code to process pending items...
+2026-03-10 23:31:27,599 - Orchestrator - INFO - Note: Running with -y flag for automatic tool execution
+2026-03-10 23:32:19,863 - Orchestrator - INFO - Qwen Code processing completed successfully
+2026-03-10 23:32:19,863 - Orchestrator - INFO - Processing triggered
+2026-03-10 23:33:19,870 - Orchestrator - INFO - Found 3 pending item(s) to process
+2026-03-10 23:33:24,296 - Orchestrator - INFO - Qwen Code found (version: 0.12.0), triggering processing...
+2026-03-10 23:33:24,297 - Orchestrator - INFO - Prompt written to: D:\Personal-AI-FTEs\AI_Employee_Vault\.qwen_prompt.txt
+2026-03-10 23:33:24,299 - Orchestrator - INFO - Starting Qwen Code to process pending items...
+2026-03-10 23:33:24,300 - Orchestrator - INFO - Note: Running with -y flag for automatic tool execution
+2026-03-10 23:36:36,240 - Orchestrator - INFO - Qwen Code processing completed successfully
+2026-03-10 23:36:36,241 - Orchestrator - INFO - Processing triggered
+2026-03-11 01:12:20,824 - Orchestrator - INFO - Orchestrator stopped by user

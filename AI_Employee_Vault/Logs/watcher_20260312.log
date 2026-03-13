@@ -1,0 +1,6 @@
+2026-03-12 23:56:46,920 - FilesystemWatcher - INFO - Initialized FilesystemWatcher
+2026-03-12 23:56:46,920 - FilesystemWatcher - INFO - Watching folder: D:\Personal-AI-FTEs\AI_Employee_Vault\Inbox
+2026-03-12 23:56:46,921 - FilesystemWatcher - INFO - Starting FilesystemWatcher (interval: 30s)
+2026-03-12 23:56:46,922 - FilesystemWatcher - INFO - Found 1 new item(s) to process
+2026-03-12 23:56:46,927 - FilesystemWatcher - INFO - Processed file: test_payment.txt -> FILE_test_payment.txt.md
+2026-03-12 23:56:46,927 - FilesystemWatcher - INFO - Created action file: FILE_test_payment.txt.md

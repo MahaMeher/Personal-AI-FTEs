@@ -1,0 +1,6 @@
+"Project: Launch new website. Steps: 
+1: Research competitors, 
+2: Design mockups, 
+3: Develop frontend, 
+4: Test on mobile, 
+5: Deploy to production."
