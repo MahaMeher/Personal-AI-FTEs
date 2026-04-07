@@ -1,0 +1,8 @@
+# Audit Logger Requirements
+# Gold Tier Feature - Personal AI FTEs Project
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Logging
+python-json-logger>=2.0.0

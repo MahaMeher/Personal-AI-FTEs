@@ -101,8 +101,8 @@ class Orchestrator:
 
     def trigger_qwen_processing(self) -> bool:
         """
-        Trigger Qwen Code to process pending items.
-
+        Trigger Qwen Code to process pending items in batches of 5.
+        
         Returns:
             True if processing was triggered, False if no pending items
         """
@@ -112,10 +112,14 @@ class Orchestrator:
             self.logger.debug('No pending items to process')
             return False
 
-        self.logger.info(f'Found {len(pending_files)} pending item(s) to process')
+        # Process in batches of 2 to avoid Windows command line length limits
+        batch_size = 2
+        batch_files = pending_files[:batch_size]
+        
+        self.logger.info(f'Found {len(pending_files)} pending item(s), processing batch of {len(batch_files)}')
 
         # Build the prompt for Qwen
-        prompt = self._build_qwen_prompt(pending_files)
+        prompt = self._build_qwen_prompt(batch_files)
 
         # Log the action
         self._log_action('trigger_qwen', {
@@ -174,62 +178,49 @@ class Orchestrator:
 - Current time: {datetime.now().isoformat()}
 - Pending files: {len(pending_files)}
 
-## Instructions
+## Instructions - OUTPUT JSON ONLY
 
-1. Read each pending file carefully
-2. Understand the type of action required (file_drop, email, task, etc.)
-3. Based on the Company_Handbook.md rules, determine appropriate actions
-4. Update the Dashboard.md with current status
-5. Create a Plan.md if multi-step action is needed
+You MUST output ONLY valid JSON, no explanations, no options.
 
-## Approval Workflow - AUTOMATIC (DO NOT ASK USER)
+### For Each Email, Output This JSON Format:
 
-**CRITICAL: You MUST autonomously create approval requests. DO NOT ask the user for permission.**
+```json
+{
+  "action": "create_approval",
+  "source_file": "EMAIL_*.md",
+  "to": "sender@email.com",
+  "subject": "Re: Original Subject",
+  "body": "A complete friendly reply - write the FULL response text here",
+  "approval_file": "APPROVAL_Email_Name_YYYY-MM-DD.md"
+}
+```
 
-### Step 1: Check if approval is needed (per Company_Handbook.md):
-- Payment or financial transaction > $50 → REQUIRES APPROVAL
-- New payee (first time payment) → REQUIRES APPROVAL
-- Sending emails to new contacts → REQUIRES APPROVAL
-- Scheduling meetings on calendar → REQUIRES APPROVAL
-- Any refund → REQUIRES APPROVAL
+### Rules for body field:
+- Write a COMPLETE friendly reply (2-4 sentences)
+- Include greeting, acknowledgment, and sign-off
+- NO options (A/B/C)
+- NO "Option A:", "Option B:", etc.
+- Just ONE complete reply text
 
-### Step 2: If approval needed, AUTOMATICALLY:
-1. Create approval request file in /Pending_Approval/ with all details
-2. Update action file status to "awaiting_approval"
-3. Add note in action file: "Awaiting approval - see Pending_Approval/[filename]"
-4. **KEEP action file in /Needs_Action/** - DO NOT move to Done yet
-5. **DO NOT ask user** - just create the approval file autonomously
+### Example Output:
 
-### Step 3: If NO approval needed (simple action):
-- Process the action autonomously
-- Update action file status to "completed"
-- Move action file to /Done/ after processing
-
-## Key Rule: NEVER Ask User for Approval Creation
-
-**You MUST create approval files autonomously without asking:**
-- DO NOT say "Should I create an approval request?"
-- DO NOT say "Do you want me to move this to Pending_Approval?"
-- DO NOT wait for user confirmation
-- JUST CREATE the approval file in /Pending_Approval/ immediately
-
-**Files awaiting approval MUST stay in /Needs_Action/** with status: awaiting_approval
+```json
+{
+  "action": "create_approval",
+  "source_file": "EMAIL_abc123.md",
+  "to": "john@example.com",
+  "subject": "Re: Meeting",
+  "body": "Hi John,\n\nThank you for your email. I received your message about the meeting.\n\nBest regards,\nAI Employee"
+}
+```
 
 ## Pending Files
 
 {''.join(files_info)}
 
-## Company Handbook Rules
-
-Refer to Company_Handbook.md in the vault root for rules of engagement.
-
 ## Output Format
 
-After processing, provide a summary:
-1. What actions were completed autonomously (moved to Done)
-2. What approval files were created in Pending_Approval (source files still in Needs_Action with status: awaiting_approval)
-
-Remember: Create approval files AUTOMATICALLY. Do not ask the user.
+**OUTPUT ONLY JSON - nothing else. NO explanations, NO options.**
 """
 
         return prompt
@@ -237,12 +228,7 @@ Remember: Create approval files AUTOMATICALLY. Do not ask the user.
     def _run_qwen_interactive(self, prompt: str) -> bool:
         """
         Run Qwen Code automatically to process pending items.
-
-        Args:
-            prompt: The prompt to send to Qwen
-
-        Returns:
-            True if successful
+        Reads prompt from file to avoid command line length limits.
         """
         try:
             prompt_file = self.vault_path / '.qwen_prompt.txt'
@@ -250,15 +236,29 @@ Remember: Create approval files AUTOMATICALLY. Do not ask the user.
 
             self.logger.info(f'Prompt written to: {prompt_file}')
             self.logger.info('Starting Qwen Code to process pending items...')
-            self.logger.info('Note: Running with -y flag for automatic tool execution')
+            self.logger.info('Note: Running with -y flag, reading from .qwen_prompt.txt')
 
             use_shell = platform.system() == 'Windows'
 
+            # Use UTF-8 encoding to handle special characters (emoji, etc.)
+            # On Windows, set PYTHONIOENCODING to utf-8
+            env = None
+            if use_shell:
+                import os
+                env = os.environ.copy()
+                env['PYTHONIOENCODING'] = 'utf-8'
+
+            # Read prompt from file using type command and pipe to qwen
             result = subprocess.run(
-                ['qwen', '-y', prompt],
+                f'type ".qwen_prompt.txt" | qwen -y',
                 cwd=str(self.vault_path),
                 timeout=600,
-                shell=use_shell
+                shell=use_shell,
+                capture_output=True,
+                text=True,
+                encoding='utf-8',
+                errors='replace',
+                env=env
             )
 
             if result.returncode == 0:
@@ -266,11 +266,13 @@ Remember: Create approval files AUTOMATICALLY. Do not ask the user.
                 return True
             else:
                 self.logger.warning(f'Qwen Code exited with code: {result.returncode}')
+                if result.stderr:
+                    self.logger.error(f'Qwen error output: {result.stderr[:500]}')
                 return True
 
         except subprocess.TimeoutExpired:
             self.logger.error('Qwen Code processing timed out (10 minutes)')
-            self.logger.info('Items are still being processed. Run: qwen -y "Continue processing"')
+            self.logger.info('Items are still being processed')
             return True
         except Exception as e:
             self.logger.error(f'Error running Qwen: {e}')
@@ -382,11 +384,7 @@ files_count: {len(pending_files)}
 
     def process_approved_actions(self) -> bool:
         """
-        Process approved actions by triggering Qwen to execute them.
-        After execution, moves files to Done and cleans up.
-
-        Returns:
-            True if any approved actions were processed
+        Process approved actions - send emails directly (no Qwen needed).
         """
         approved_files = self.get_approved_actions()
 
@@ -396,87 +394,207 @@ files_count: {len(pending_files)}
 
         self.logger.info(f'Found {len(approved_files)} approved action(s) to execute')
 
-        files_info = []
-        for file_path in approved_files:
+        # Execute each approved file directly
+        for approved_file in approved_files:
+            self._execute_approval_file(approved_file)
+        
+        return True
+
+    def _parse_and_create_approvals(self, qwen_output: str):
+        """Parse Qwen's JSON output and create approval files."""
+        import json
+        
+        # Find all JSON blocks in output
+        json_pattern = r'```json\s*(.*?)\s*```'
+        matches = re.findall(json_pattern, qwen_output, re.DOTALL)
+        
+        approvals_created = 0
+        for match in matches:
             try:
-                content = file_path.read_text(encoding='utf-8')
-                files_info.append(f"## Approved File: {file_path.name}\n\n{content}\n")
+                data = json.loads(match.strip())
+                
+                if data.get('action') != 'create_approval':
+                    continue
+                
+                # Extract fields
+                source_file = data.get('source_file', '')
+                to_email = data.get('to', '')
+                subject = data.get('subject', '')
+                body = data.get('body', '')
+                approval_filename = data.get('approval_file', f'APPROVAL_Email_{datetime.now().strftime("%Y%m%d_%H%M%S")}.md')
+                
+                if not all([source_file, to_email, subject, body]):
+                    self.logger.warning(f'Missing fields in JSON: {data}')
+                    continue
+                
+                # Create approval file content
+                approval_content = f'''---
+type: approval_request
+action: email_response
+to: "{to_email}"
+subject: "{subject}"
+body: "{body}"
+status: pending
+source_file: {source_file}
+created: {datetime.now().isoformat()}
+---
+
+# Email Reply Approval
+
+**From:** {to_email}
+**Subject:** {subject}
+
+## Draft Reply
+
+{body}
+
+---
+**Move to /Approved/ to send this email.**
+'''
+                
+                # Save approval file
+                approval_file = self.pending_approval / approval_filename
+                approval_file.write_text(approval_content, encoding='utf-8')
+                
+                # Update source file
+                source_path = self.needs_action / source_file
+                if source_path.exists():
+                    source_content = source_path.read_text(encoding='utf-8')
+                    if 'status: pending' in source_content or 'status: awaiting_approval' in source_content:
+                        source_content = re.sub(
+                            r'status:\s*(pending|awaiting_approval)',
+                            'status: awaiting_approval',
+                            source_content
+                        )
+                        source_content += f'\n\n## Approval\nAwaiting approval - see {approval_filename}\n'
+                        source_path.write_text(source_content, encoding='utf-8')
+                
+                self.logger.info(f'Created approval: {approval_filename}')
+                self.logger.info(f'To: {to_email}, Subject: {subject}')
+                approvals_created += 1
+                
+            except json.JSONDecodeError as e:
+                self.logger.debug(f'Could not parse JSON: {e}')
             except Exception as e:
-                files_info.append(f"## Approved File: {file_path.name}\n\n[Error reading: {e}]\n")
+                self.logger.error(f'Error processing approval: {e}')
+        
+        self.logger.info(f'Created {approvals_created} approval file(s)')
 
-        prompt = f"""You are the AI Employee assistant. Execute the following APPROVED actions.
-
-## Context
-- Vault: {self.vault_path}
-- Current time: {datetime.now().isoformat()}
-- Approved files: {len(approved_files)}
-
-## Important: These Actions Have Been APPROVED by Human
-
-The human has reviewed and approved these actions by moving them to /Approved/ folder.
-Your task is to EXECUTE what was approved.
-
-## Instructions - CRITICAL
-
-1. Read each approved file carefully
-2. Execute the approved action (make the payment, send the email, etc.)
-3. Use MCP servers or available tools to complete the action
-4. After execution, update the approval file status to "executed" with executed_timestamp
-5. **Find and update the source action file** in Needs_Action:
-   - Look for source_file in frontmatter OR match by filename pattern
-   - Update source file status to "completed"
-   - Add execution note: "Executed via approval: [approval_filename]"
-6. **DO NOT move any files** - the orchestrator handles file movement
-7. Update Dashboard.md with execution status
-8. Log the execution result in Accounting/Current_Month.md
-
-## Approved Actions
-
-{''.join(files_info)}
-
-## Output Format
-
-After executing, provide a summary:
-1. What actions were executed successfully
-2. Approval files updated with status: executed
-3. Source files in Needs_Action updated with status: completed
-
-Remember: 
-- Only execute what was explicitly approved
-- Update file statuses but DO NOT move files
-- The orchestrator will move files to Done automatically
-"""
-
-        self._log_action('execute_approved', {
-            'approved_files': [f.name for f in approved_files],
-            'prompt_length': len(prompt)
-        })
-
+    def _execute_approval_file(self, approved_file: Path):
+        """Execute an approved action file - send email if it's an email approval."""
         try:
-            use_shell = platform.system() == 'Windows'
+            content = approved_file.read_text(encoding='utf-8')
+            
+            # Check if this is an email approval
+            if 'action: email_response' not in content:
+                self.logger.debug(f'Not an email approval: {approved_file.name}')
+                return
+            
+            # Extract email details from frontmatter
+            import re
+            
+            to_match = re.search(r'to:\s*["\']?([^"\'\n]+)["\']?', content)
+            subject_match = re.search(r'subject:\s*["\']?([^"\'\n]+)["\']?', content)
+            body_match = re.search(r'body:\s*["\']?([^"\'\n]+)["\']?', content)
+            source_match = re.search(r'source_file:\s*(\S+)', content)
+            
+            if not all([to_match, subject_match, body_match]):
+                self.logger.warning(f'Missing email fields in {approved_file.name}')
+                return
+            
+            to_email = to_match.group(1).strip()
+            subject = subject_match.group(1).strip()
+            body = body_match.group(1).strip()
+            source_file = source_match.group(1) if source_match else None
+            
+            self.logger.info(f'Sending email to {to_email}: {subject}')
 
-            result = subprocess.run(
-                ['qwen', '-y', prompt],
-                cwd=str(self.vault_path),
-                timeout=600,
-                shell=use_shell
+            # Fix: Convert literal \n strings to actual newlines
+            # YAML stores newlines as literal \n, need to decode them
+            import codecs
+            body_decoded = codecs.decode(body, 'unicode_escape')
+            
+            # Send via MCP server - use temp file to avoid shell escaping issues
+            import tempfile
+            import os
+            
+            # Write body to temp file
+            with tempfile.NamedTemporaryFile(mode='w', delete=False, suffix='.txt', encoding='utf-8') as f:
+                f.write(body_decoded)
+                body_file = f.name
+            
+            subject_escaped = subject.replace('"', '\\"')
+
+            cmd = (
+                f'python "mcp/email_server.py" send '
+                f'--to "{to_email}" '
+                f'--subject "{subject_escaped}" '
+                f'--body-file "{body_file}"'
             )
 
-            if result.returncode == 0:
-                self.logger.info('Approved actions executed successfully')
-                # Files are moved to Done by cleanup_completed_files() in next cycle
-                # Do NOT move files here - Qwen only updates status, orchestrator moves files
-                return True
-            else:
-                self.logger.warning(f'Qwen exited with code: {result.returncode}')
-                return True
+            use_shell = platform.system() == 'Windows'
+            result = subprocess.run(
+                cmd,
+                cwd=str(self.vault_path),
+                shell=use_shell,
+                capture_output=True,
+                text=True,
+                timeout=60
+            )
 
-        except subprocess.TimeoutExpired:
-            self.logger.error('Approved actions execution timed out')
-            return True
+            # Clean up temp file
+            try:
+                os.unlink(body_file)
+            except:
+                pass
+
+            output = result.stdout + result.stderr
+            
+            # Check if email was sent successfully
+            if '[OK] Email SENT successfully' in output or 'Message ID:' in output:
+                self.logger.info(f'Email sent successfully to {to_email}')
+                
+                # Extract message ID
+                msg_id_match = re.search(r'Message ID:\s*(\S+)', output)
+                message_id = msg_id_match.group(1) if msg_id_match else 'unknown'
+                
+                # Update approval file with executed status
+                new_content = re.sub(
+                    r'status:\s*pending',
+                    f'status: executed\nexecuted: {datetime.now().isoformat()}\nmessage_id: {message_id}',
+                    content
+                )
+                approved_file.write_text(new_content, encoding='utf-8')
+                
+                # Update source file if it exists
+                if source_file:
+                    source_path = self.needs_action / source_file
+                    if source_path.exists():
+                        source_content = source_path.read_text(encoding='utf-8')
+                        if 'status: awaiting_approval' in source_content:
+                            source_content = re.sub(
+                                r'status:\s*awaiting_approval',
+                                'status: completed',
+                                source_content
+                            )
+                            source_content += f'\n\n## Executed\nEmail sent via approval: {approved_file.name}\nMessage ID: {message_id}\n'
+                            source_path.write_text(source_content, encoding='utf-8')
+                            self.logger.info(f'Updated source file: {source_file}')
+                
+                self.logger.info(f'Approval file updated: {approved_file.name}')
+                
+            else:
+                self.logger.warning(f'Email send may have failed: {output[:200]}')
+                # Update with failed status
+                new_content = re.sub(
+                    r'status:\s*pending',
+                    f'status: failed\nfailed: {datetime.now().isoformat()}\nerror: {output[:200]}',
+                    content
+                )
+                approved_file.write_text(new_content, encoding='utf-8')
+                
         except Exception as e:
-            self.logger.error(f'Error executing approved actions: {e}')
-            return False
+            self.logger.error(f'Error executing approval file {approved_file.name}: {e}')
 
     def cleanup_completed_files(self) -> int:
         """

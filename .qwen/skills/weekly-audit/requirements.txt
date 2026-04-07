@@ -1,0 +1,14 @@
+# Weekly Business Audit Requirements
+# Gold Tier Feature - Personal AI FTEs Project
+
+# HTTP clients
+requests>=2.31.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Logging
+python-json-logger>=2.0.0
+
+# Date handling
+python-dateutil>=2.8.2

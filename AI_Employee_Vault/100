@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "### Error\nSyntaxError: Unexpected identifier 'page'"
+    }
+  ],
+  "isError": true
+}

@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+.venv/
+venv/
+env/
+.env
+UV_USE_PYTHON_LINK=0
+.uv/
+
+# Credentials & Secrets
+credentails.json
+credentials.json
+*.key
+*.secret
+.env.local
+.env.production
+
+# Obsidian
+.obsidian/workspace*
+.obsidian/workspace-*.json
+.obsidian/app.json~
+
+# AI Employee Vault - Sensitive/Working Files
+AI_Employee_Vault/Inbox/
+AI_Employee_Vault/Needs_Action/
+AI_Employee_Vault/In_Progress/
+AI_Employee_Vault/Pending_Approval/
+AI_Employee_Vault/Approved/
+AI_Employee_Vault/Done/
+AI_Employee_Vault/.facebook_processed.json
+AI_Employee_Vault/.qwen_prompt.txt
+AI_Employee_Vault/$null
+AI_Employee_Vault/{
+
+# Qwen
+.qwen/commands/
+.qwen/settings.json
+.qwen/tmp/
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+$null
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Temporary Files
+*.tmp
+*.temp
+temp/
+
+# Docker (if not needed in repo)
+docker/.env
+
+# Node (if MCP servers are used)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Playwright
+.playwright/
+test-results/
+playwright-report/
+
+# Claude
+.claude/
+CLAUDE.md

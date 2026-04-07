@@ -49,14 +49,14 @@ class BaseWatcher(ABC):
         """Setup logging to file and console."""
         log_dir = self.vault_path / 'Logs'
         log_dir.mkdir(parents=True, exist_ok=True)
-        
+
         log_file = log_dir / f'watcher_{datetime.now().strftime("%Y%m%d")}.log'
-        
+
         logging.basicConfig(
             level=logging.INFO,
             format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
             handlers=[
-                logging.FileHandler(log_file),
+                logging.FileHandler(log_file, encoding='utf-8'),
                 logging.StreamHandler()
             ]
         )
@@ -88,29 +88,33 @@ class BaseWatcher(ABC):
     def run(self) -> None:
         """
         Main run loop. Continuously checks for updates and creates action files.
-        
+
         This method runs indefinitely until interrupted (Ctrl+C).
         """
         self.logger.info(f'Starting {self.__class__.__name__} (interval: {self.check_interval}s)')
-        
+
         try:
             while True:
                 try:
+                    self.logger.info(f"--- Check cycle at {datetime.now().strftime('%H:%M:%S')} ---")
                     items = self.check_for_updates()
-                    
+
                     if items:
                         self.logger.info(f'Found {len(items)} new item(s) to process')
-                        
+
                         for item in items:
                             filepath = self.create_action_file(item)
                             if filepath:
-                                self.logger.info(f'Created action file: {filepath.name}')
-                    
+                                self.logger.info(f'✓ Created: {filepath.name}')
+                    else:
+                        self.logger.info(f"No new items. Next check in {self.check_interval}s...")
+
                 except Exception as e:
-                    self.logger.error(f'Error processing items: {e}', exc_info=True)
-                
+                    self.logger.error(f'Error in cycle: {e}', exc_info=True)
+
+                self.logger.info(f"--- Cycle complete. Sleeping {self.check_interval}s ---\n")
                 time.sleep(self.check_interval)
-                
+
         except KeyboardInterrupt:
             self.logger.info(f'{self.__class__.__name__} stopped by user')
         except Exception as e:

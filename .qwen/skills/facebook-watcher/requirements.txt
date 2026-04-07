@@ -1,0 +1,15 @@
+# Facebook Watcher Requirements
+# Gold Tier Feature - Personal AI FTEs Project
+
+# HTTP client for Graph API
+requests>=2.31.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Logging
+python-json-logger>=2.0.0
+
+# Optional: For advanced sentiment analysis
+# textblob>=0.17.1
+# vaderSentiment>=3.3.2

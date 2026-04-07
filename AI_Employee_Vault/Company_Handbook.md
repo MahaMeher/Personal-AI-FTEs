@@ -39,18 +39,35 @@ This document defines the operating principles and boundaries for the AI Employe
 
 ## Financial Rules
 
+### Odoo ERP Integration
+- All accounting operations go through Odoo MCP server
+- Odoo Watcher monitors for accounting events 24/7
+- Financial data synchronized with Obsidian vault
+
 ### Payment Thresholds
 | Action | Auto-Approve | Require Approval |
 |--------|-------------|------------------|
 | Incoming payments | Always | - |
 | Outgoing payments | < $50 (recurring only) | All new payees, > $100 |
 | Refunds | Never | Always |
+| Invoice creation | Draft only < $100 | All invoices > $100 |
+| Invoice posting | < $100 | All invoices > $100 |
 
 ### Flag for Review
 - Any transaction over $500
 - Unusual spending patterns
 - Subscription renewals
 - Duplicate charges
+- Overdue invoices > 7 days
+- Low bank balance alerts (< $1,000)
+
+### Odoo Watcher Alerts
+The Odoo Watcher creates action files for:
+- **Overdue invoices** (> 7 days) → Draft reminder email
+- **Unpaid vendor bills** → Create payment approval request
+- **Low bank balance** (< $1,000) → Critical alert to human
+- **Large transactions** (> $5,000) → Flag for review
+- **Draft invoices** → Approval required before posting
 
 ---
 

@@ -1,0 +1,33 @@
+- generic [ref=e5]:
+  - banner:
+    - generic [ref=e8]:
+      - generic [ref=e10]:
+        - generic:
+          - button [disabled]:
+            - img
+        - button "Facebook" [ref=e12] [cursor=pointer]:
+          - img "Facebook" [ref=e13]
+      - generic [ref=e18]:
+        - textbox "Email or phone" [ref=e21]
+        - textbox "Password" [ref=e24]
+        - button "Log in" [ref=e27] [cursor=pointer]:
+          - generic [ref=e31]: Log in
+        - link "Forgotten account?" [ref=e34] [cursor=pointer]:
+          - /url: https://www.facebook.com/recover/initiate?ars=royal_blue_bar
+  - main [ref=e40]:
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - img [ref=e44]
+        - generic [ref=e53]:
+          - heading "This content isn't available at the moment" [level=2] [ref=e55]:
+            - generic [ref=e56]: This content isn't available at the moment
+          - generic [ref=e58]: When this happens, it's usually because the owner only shared it with a small group of people or changed who can see it, or it's been deleted.
+        - link "Go to Feed" [ref=e60] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e63]: Go to Feed
+      - generic [ref=e64]:
+        - button "Go back" [ref=e65] [cursor=pointer]:
+          - generic [ref=e66]: Go back
+        - link "Visit Help Centre" [ref=e68] [cursor=pointer]:
+          - /url: https://www.facebook.com/help
+          - generic [ref=e69]: Visit Help Centre

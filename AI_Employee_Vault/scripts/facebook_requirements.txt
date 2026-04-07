@@ -1,0 +1,21 @@
+# Facebook/Instagram MCP Server Requirements
+# Gold Tier Feature - Personal AI FTEs Project
+
+# Core MCP
+mcp>=1.0.0
+
+# HTTP client for Meta Graph API
+requests>=2.31.0
+
+# Async support
+asyncio>=3.4.3
+
+# Logging
+python-json-logger>=2.0.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Testing (optional)
+pytest>=7.4.0
+pytest-asyncio>=0.21.0

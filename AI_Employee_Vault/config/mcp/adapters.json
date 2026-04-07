@@ -1,0 +1,28 @@
+{
+  "adapters": {
+    "email": {
+      "enabled": true,
+      "provider": "gmail",
+      "credentials": "../../credentails.json",
+      "signature": "Best regards,\nAI Employee",
+      "require_approval_new_contacts": true
+    },
+    "whatsapp": {
+      "enabled": false,
+      "session_path": "config/whatsapp/session",
+      "headless": true,
+      "require_approval_new_contacts": true
+    },
+    "linkedin": {
+      "enabled": true,
+      "session_path": "config/linkedin/session",
+      "headless": false,
+      "require_approval_all_posts": true
+    },
+    "browser": {
+      "enabled": true,
+      "headless": false,
+      "timeout": 30000
+    }
+  }
+}
